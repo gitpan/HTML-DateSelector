@@ -2,7 +2,8 @@ package HTML::DateSelector;
 use strict;
 use warnings;
 use Carp;
-our $VERSION = '0.02';
+use 5.008001;
+our $VERSION = '0.03';
 
 sub _this_year {
     my ($class, ) = @_;
@@ -93,6 +94,7 @@ generate HTML for date selector.
 =head1 CLASS METHODS
 
 =head2 ymd
+
 =head2 ym
 
     my $html = HTML::DateSelector->ymd('start_on');
@@ -111,8 +113,11 @@ ym => year, month.
 Year selector.You can set the span of year.
 
 =head2 month
+
 =head2 day
+
 =head2 hour
+
 =head2 minute
 
   my $html = HTML::DateSelector->hour('start_on');
@@ -126,16 +131,6 @@ primitive selector.month, day, hour, minute.
 =head2 include_blank
 
 you can select the blank.
-
-=head2 plugin
-
-  # todo:
-  my $html = HTML::DateSelector->ymd('start_on', {plugin => 'DoJo'}); # or
-  my $html = HTML::DateSelector->ymd('start_on', {plugin => [qw/DoJo/]});
-
-use the plugin feature.
-
-*** NOT IMPLEMENTED YET ***
 
 =head1 AUTHOR
 
