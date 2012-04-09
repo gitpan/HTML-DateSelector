@@ -1,13 +1,13 @@
 ---
 abstract: 'Generate HTML for date selector.'
 author:
-  - 'Tokuhiro Matsuno  C<< <tokuhiro __at__ mobilefactory.jp> >>'
+  - 'Tokuhiro Matsuno  C<< <tokuhirom @__at__ gmail.com> >>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.98
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 0.99'
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,9 +18,12 @@ no_index:
     - inc
     - t
     - xt
+provides:
+  HTML::DateSelector:
+    file: lib/HTML/DateSelector.pm
+    version: 0.05
 requires:
-  perl: 5.8.1
+  perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-  repository: git://github.com/tokuhirom/p5-HTML-DateSelector.git
-version: 0.04
+version: 0.05

@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use Carp;
 use 5.008001;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub _this_year {
     my ($class, ) = @_;
@@ -134,7 +134,7 @@ you can select the blank.
 
 =head1 AUTHOR
 
-Tokuhiro Matsuno  C<< <tokuhiro __at__ mobilefactory.jp> >>
+Tokuhiro Matsuno  C<< <tokuhirom @__at__ gmail.com> >>
 
 =head1 SEE ALSO
 
